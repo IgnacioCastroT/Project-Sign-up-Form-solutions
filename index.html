@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="script.js" defer ></script>
+    <title>Sign-up form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="izquierda">
+            <img class="wallpaper" src="images/cocodrilo.png" alt="imagen random de un cocodrilo con ia">
+            <div class="box-descripcion">
+                <div class="titulo"> Cocodrile Games</div>       
+                <div class="descripcion"> Vive la experiencia salvaje de un cocodrilo</div>     
+            </div>
+  
+        </div>
+
+        <div class="derecha">
+            <h3>Crear cuenta</h3>
+            <form action="#" method="post" class="formulario">
+                <label for="name">Nombre</label><br>
+                <input required class="box-form" type="text" id="name" name="name" placeholder="Ingrese su nombre...">
+
+                <label for="last_name">Apellido</label><br>
+                <input required class="box-form" type="text" id="last_name" name="last_name" placeholder="Ingrese su apellido...">
+
+                <label for="email">Correo Electronico</label><br>
+                <input required class="box-form" type="email" id="email" name="email" placeholder="Ej: juanito@gmail.com">
+
+                <label for="phone_number">Numero celular</label><br>
+                <input required class="box-form" type="number" id="phone_number" name="phone_number" placeholder="Ej: 91234567">
+
+                <label for="password">Constraseña</label><br>
+                <input required class="box-form" type="password" id="password" name="password" placeholder="Ingrese su contraseña..." minlength="5">
+
+                <label for="password_confirm">Confirmar constraseña</label><br>
+                <input required class="box-form" type="password" id="password_confirm" name="password_confirm" placeholder="Ingrese su contraseña..." minlength="5">
+                <p id="resultMessage"></p>
+                
+                <p><input type="checkbox"> I agree to the licensing agreements, terms & conditions and privacy policy.</p>
+                <button class="create" disabled type="submit">Crear Cuenta</button>
+            </form>
+            <p>Ya tienes una cuenta? <a href="">Log in</a></p>
+        </div>
+    </div>
+
+    <footer>Creado por Ignacio <a href="https://github.com/IgnacioCastroT/Project-Sign-up-Form-solutions">Go to repo</a></footer>
+</body>
+</html>
